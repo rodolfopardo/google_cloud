@@ -1,0 +1,662 @@
+
+            I am trying to build a docker image on a Google VM.
+This is the dockerfile:
+FROM continuumio/miniconda3
+RUN apt install -y libgl1-mesa-glx
+RUN conda install conda-build
+RUN apt-get install -y git
+...
+        
+
+            I am trying to enable Audit Logs i.e. Data Access Logs using Cloud Deployment Manager in GCP but I am getting some error, below is the script I have created in YAML.
+resources:
+- name: get-iam-policy
+ ...
+        
+
+            I have standard app engine which makes an api call to another app engine within same shared VPC but the response is 403 forbidden error. Also the standard app engine to which i am making api call as ...
+        
+
+            I am working on developing a datacatalog integration pipeline in google cloud composer. Since I am using composer version composer-1.12.4-airflow-1.10.10, its not allowing me to install google-cloud-...
+        
+
+            In GCP compute  Linux Accidentally did cat filebeat instead of filebeat.yaml
+after that my bashrc contains below chars and  if I type '~'  bash is printing 'ü'
+Need help in fixing this
+if Ä -f ü/....
+        
+
+            When trying to associate a VPC connector in a service project with a shared VPC subnet in another project (From the same organization) the following error appears:
+Unknown error. Original error ...
+        
+
+            After my trial version credits got depleted on GCP, I upgraded my account. However my Kubernetes cluster and all its deployments appear to have been deleted. It now appears almost like I am activating ...
+        
+
+            I have a simple Spring Boot API project that runs well when I execute a bootable jar file on my local machine or a docker image on Google Kubernetes Engine but emits errors when using docker run on my ...
+        
+
+            I want to create a GCP project with terraform using vault to get the token. I have the GCP secrets engine already configurated and I ask to vault with terraform to get te token, but when I run ...
+        
+
+            I am getting this error message when I try to upload the dag file to cloud
+composer
+Broken DAG: [/home/airflow/gcs/dags/dag_load_gcs_bq.py] Argument ['source_objects'] is required
+This dag was running ...
+        
+
+            I am using CSV file data to generate report using google data studio tools.
+Creating a custom report template for my reports where I want bind key value pair with some action button.
+So here user can ...
+        
+
+            I have connected Google Firebase data for an app to automatically transfer the data on a daily basis to Google BigQuery. However, there seems to be some delays in the data being loaded for up to 3-4 ...
+        
+
+            I've installed a WordPress website on Google cloud, using click to deploy. The SSL needed to be renewed, but I screwed up the renewal and had to rebuilt the site. I need to export some other databases ...
+        
+
+            bigquery-public-data:geolite2.ipv4_city_blocks doesnt seem to exist anymore, I could query other tables in public-data dataset, was geolite2 dataset removed recently?
+Error
+
+Access Denied: Table ...
+        
+
+            Is it possible to have a terraform list of ids (as string), like so:
+locals  {
+  secrets = [
+    "cloud.secret.id1",
+    "cloud.secret.id2",
+    "cloud.secret.id3",
+  ]
+}
+...
+        
+
+            I was using Terraform's google_storage_bucket_iam_policy instead of google_storage_bucket_iam_member to apply permissions which resulted in all the default permissions including the intrinsic ...
+        
+
+            I am new to google cloud infra but wanted to understand how can I create a multi region cloud sql infra. Basically my front end will be distributed across region and so do my backend. Front end ...
+        
+
+            I am new to working with the google places api, and want users to be able to search an industry by keyword Ex: accountants.
+I know GCP also has a Type option, however it does not cover all the ...
+        
+
+            I would like to have my nodeJS application authenticate itself locally with my IAM credentials, however when I run the basic secrets manager function below:
+// config/secret_manager.js
+const { ...
+        
+
+            I would like to upload an mp3 file with binary data to Google Cloud Storage with an API call in Adalo. I saw that this is the request I should do:
+{
+    "data": "IMTBuffer(*buffer ...
+        
+
+            I'm trying to run the Compute Engine API from my home machine using curl (don't use gconsole or sdks).
+I can get response using OAuth 2.0 access, but can't get response using only api-key.
+Can I use ...
+        
+
+            I have a website running using CyberPanel on Google Cloud. I want to transfer it to Alibaba Cloud. It took a lot of effort to setup and get running the existing CyberPanel so I don't want to do it ...
+        
+
+            need your kind advise and help in regards to this issue.
+The setup is as follow:
+
+Cloud Build's access to the private Github account was granted through Cloud Build Github App.
+The trigger's setup was ...
+        
+
+            I noticed this package is deprecated, per the documentation here: https://cloud.google.com/appengine/docs/standard/go/go-differences
+What is the correct way to log on Go 1.12+ without losing log ...
+        
+
+            I have two disks attached to instance. one of them is presistent disk that was created along with instance (20GB). Another one created and attached later(pd-balanced). I have created a swapfile in the ...
+        
+
+            I'm trying to deploy my application in Google Cloud Platform. This application is built using Spring Boot + Vaadin + MySQL. Normally, when I load my application (database is in Google Cloud) with ...
+        
+
+            We deployed Gridgain cluster in Google Kubernetes cluster and it working properly with persistence enable. We need to auto scale enable. At scale up no any errors, but at the scale down given "...
+        
+
+            I am mounting the pod with persistent volume claim in google cloud. I have tried using the storage class with type pd-ssd and the standard persistent volume but if I delete the pod and it gets ...
+        
+
+            I need to use AI and fetch the questions and answer choices so I can convert them to a Google forms for my company.
+I have found a similar addon Automagical forms add-on for Google forms.
+How do I get ...
+        
+
+            I am getting below error when I execute terraform plan. I don't see any error when I use a single volume name in volume_name, I am facing this error when I specify multiple volume names in volume_name=...
+        
+
+            Some things are very easy to do with the gcloud CLI, like:
+$ export network='default' instance='example-instance' firewall='ssh-http-icmp-fw'
+$ gcloud compute networks       create "$network"...
+        
+
+            I trained a Logistic Regression model on Bigquery and downloaded it locally.
+Afterwards I wanted to load it and make a prediction but it gives me an error which I cannot solve.
+This is the simple code ...
+        
+
+            Hi short important question:
+Like much people I want to use the Load Balancing + Cloud CDN + Cloud Armor stack. Because yeah, CDN and anti DDOS is important. Load Balancing too.
+Cloud Storage is ...
+        
+
+            I have permissions to create folders and files in a specific bucket (i.e., I can create and move files around in the console). However, when I try to push files to the bucket from a VM located in ...
+        
+
+            I have a email purchased from Godaddy and a website developed in .net is hosted on GCP app Engine. Emails were working fine before and now getting timed out. It is still working fine from local host ...
+        
+
+            Assume there is a system that accepts millions of simultaneous WebSocket connections from client applications. I was wondering if there is a way to route WebSocket connections to a specific instance ...
+        
+
+            This is truly boggling my mind. I am using Python and trying to pull the secrets manager value from a resource that I have access to from what I can tell. I'm on Windows using Python 3.8.
+def ...
+        
+
+            I have a simple reactjs frontend and a small flask python backend. Both are currently running on two separate gcp servers.
+I could have simply use the public IP of the backend running server with the ...
+        
+
+            I have multiple big query schedule jobs which gets triggered using a cloud function. How do I set an alert and send am email when any of the big query schedule job fails.
+I did look at stackdriver ...
+        
+
+            I am using a Cloud Vision API in my current project, and it works pretty well, but the json file looks like that:
+Json file from pdf
+Cloud Vision saves all content of the pdf file and my question is:
+...
+        
+
+            I have a cloudbuild.yaml file for google cloud (GCP). I would like to grab the version from package.json using a simple bash script $(node -p -e "require('./package.json').version") (or any ...
+        
+
+            I have read a lot of articles recently, including the official documentation, trying to understand how the Global Window works in Apache Beam. I have read similar questions here in Stackoverflow but I ...
+        
+
+            I have a cloud function which is getting invoked by a GTM container through HTTP calls(I have provided the endpoint of my cloud function inside GTM). The number of invocations is high.
+This is my ...
+        
+
+            I tried to register an application in the Googlt Cloud Platform They ask me to enter a home site and a link to the privacy policy because I do not have my own site, I entered my telegram channel into ...
+        
+
+            I'm running into a new error when trying to provision a load balancer with a serverless network endpoint group pointing to a cloud function. It appears the resource name for the function doesn't pass ...
+        
+
+            I'm trying to connect to google cloud Cloud source repositories to Jet Brains upsource in windows.
+I'm facing an unknown host error.
+I followed the gcloud documentation below for ssh connection
+https:/...
+        
+
+            I'm using Postrgesql via python, but I'm getting an error on the following insertion, alleging that 'column "\ufeff61356169" does not exist'.
+c_id = "\ufeff61356169"
+chunk = "...
+        
+
+            I'm having trouble deploying a website I made using Flask and SQLAlchemy to Google App Engine. When run locally my web app can succesfully connect to my Cloud SQL, but when deployed tp App Engine, it ...
+        
+
+            I am trying to publish my Android app to our company's Play Store.
+On Google API access page
+
+I am trying to create new service account. It does not work.
+
+You are missing at least one of the ...
+        
+
+            Just wanted to make sure my understanding is correct. Based on my research, Deployment Manager can integrate with third party APIs, although is a BETA feature at this moment.
+So my question is, can ...
+        
+
+            I am trying to build a docker image on a Google VM.
+This is the dockerfile:
+FROM continuumio/miniconda3
+RUN apt install -y libgl1-mesa-glx
+RUN conda install conda-build
+RUN apt-get install -y git
+...
+        
+
+            I am trying to enable Audit Logs i.e. Data Access Logs using Cloud Deployment Manager in GCP but I am getting some error, below is the script I have created in YAML.
+resources:
+- name: get-iam-policy
+ ...
+        
+
+            I have standard app engine which makes an api call to another app engine within same shared VPC but the response is 403 forbidden error. Also the standard app engine to which i am making api call as ...
+        
+
+            I am working on developing a datacatalog integration pipeline in google cloud composer. Since I am using composer version composer-1.12.4-airflow-1.10.10, its not allowing me to install google-cloud-...
+        
+
+            In GCP compute  Linux Accidentally did cat filebeat instead of filebeat.yaml
+after that my bashrc contains below chars and  if I type '~'  bash is printing 'ü'
+Need help in fixing this
+if Ä -f ü/....
+        
+
+            When trying to associate a VPC connector in a service project with a shared VPC subnet in another project (From the same organization) the following error appears:
+Unknown error. Original error ...
+        
+
+            After my trial version credits got depleted on GCP, I upgraded my account. However my Kubernetes cluster and all its deployments appear to have been deleted. It now appears almost like I am activating ...
+        
+
+            I have a simple Spring Boot API project that runs well when I execute a bootable jar file on my local machine or a docker image on Google Kubernetes Engine but emits errors when using docker run on my ...
+        
+
+            I want to create a GCP project with terraform using vault to get the token. I have the GCP secrets engine already configurated and I ask to vault with terraform to get te token, but when I run ...
+        
+
+            I am getting this error message when I try to upload the dag file to cloud
+composer
+Broken DAG: [/home/airflow/gcs/dags/dag_load_gcs_bq.py] Argument ['source_objects'] is required
+This dag was running ...
+        
+
+            I am using CSV file data to generate report using google data studio tools.
+Creating a custom report template for my reports where I want bind key value pair with some action button.
+So here user can ...
+        
+
+            I have connected Google Firebase data for an app to automatically transfer the data on a daily basis to Google BigQuery. However, there seems to be some delays in the data being loaded for up to 3-4 ...
+        
+
+            I've installed a WordPress website on Google cloud, using click to deploy. The SSL needed to be renewed, but I screwed up the renewal and had to rebuilt the site. I need to export some other databases ...
+        
+
+            bigquery-public-data:geolite2.ipv4_city_blocks doesnt seem to exist anymore, I could query other tables in public-data dataset, was geolite2 dataset removed recently?
+Error
+
+Access Denied: Table ...
+        
+
+            Is it possible to have a terraform list of ids (as string), like so:
+locals  {
+  secrets = [
+    "cloud.secret.id1",
+    "cloud.secret.id2",
+    "cloud.secret.id3",
+  ]
+}
+...
+        
+
+            I was using Terraform's google_storage_bucket_iam_policy instead of google_storage_bucket_iam_member to apply permissions which resulted in all the default permissions including the intrinsic ...
+        
+
+            I am new to google cloud infra but wanted to understand how can I create a multi region cloud sql infra. Basically my front end will be distributed across region and so do my backend. Front end ...
+        
+
+            I am new to working with the google places api, and want users to be able to search an industry by keyword Ex: accountants.
+I know GCP also has a Type option, however it does not cover all the ...
+        
+
+            I would like to have my nodeJS application authenticate itself locally with my IAM credentials, however when I run the basic secrets manager function below:
+// config/secret_manager.js
+const { ...
+        
+
+            I would like to upload an mp3 file with binary data to Google Cloud Storage with an API call in Adalo. I saw that this is the request I should do:
+{
+    "data": "IMTBuffer(*buffer ...
+        
+
+            I'm trying to run the Compute Engine API from my home machine using curl (don't use gconsole or sdks).
+I can get response using OAuth 2.0 access, but can't get response using only api-key.
+Can I use ...
+        
+
+            I have a website running using CyberPanel on Google Cloud. I want to transfer it to Alibaba Cloud. It took a lot of effort to setup and get running the existing CyberPanel so I don't want to do it ...
+        
+
+            need your kind advise and help in regards to this issue.
+The setup is as follow:
+
+Cloud Build's access to the private Github account was granted through Cloud Build Github App.
+The trigger's setup was ...
+        
+
+            I noticed this package is deprecated, per the documentation here: https://cloud.google.com/appengine/docs/standard/go/go-differences
+What is the correct way to log on Go 1.12+ without losing log ...
+        
+
+            I have two disks attached to instance. one of them is presistent disk that was created along with instance (20GB). Another one created and attached later(pd-balanced). I have created a swapfile in the ...
+        
+
+            I'm trying to deploy my application in Google Cloud Platform. This application is built using Spring Boot + Vaadin + MySQL. Normally, when I load my application (database is in Google Cloud) with ...
+        
+
+            We deployed Gridgain cluster in Google Kubernetes cluster and it working properly with persistence enable. We need to auto scale enable. At scale up no any errors, but at the scale down given "...
+        
+
+            I am mounting the pod with persistent volume claim in google cloud. I have tried using the storage class with type pd-ssd and the standard persistent volume but if I delete the pod and it gets ...
+        
+
+            I need to use AI and fetch the questions and answer choices so I can convert them to a Google forms for my company.
+I have found a similar addon Automagical forms add-on for Google forms.
+How do I get ...
+        
+
+            I am getting below error when I execute terraform plan. I don't see any error when I use a single volume name in volume_name, I am facing this error when I specify multiple volume names in volume_name=...
+        
+
+            Some things are very easy to do with the gcloud CLI, like:
+$ export network='default' instance='example-instance' firewall='ssh-http-icmp-fw'
+$ gcloud compute networks       create "$network"...
+        
+
+            I trained a Logistic Regression model on Bigquery and downloaded it locally.
+Afterwards I wanted to load it and make a prediction but it gives me an error which I cannot solve.
+This is the simple code ...
+        
+
+            Hi short important question:
+Like much people I want to use the Load Balancing + Cloud CDN + Cloud Armor stack. Because yeah, CDN and anti DDOS is important. Load Balancing too.
+Cloud Storage is ...
+        
+
+            I have permissions to create folders and files in a specific bucket (i.e., I can create and move files around in the console). However, when I try to push files to the bucket from a VM located in ...
+        
+
+            I have a email purchased from Godaddy and a website developed in .net is hosted on GCP app Engine. Emails were working fine before and now getting timed out. It is still working fine from local host ...
+        
+
+            Assume there is a system that accepts millions of simultaneous WebSocket connections from client applications. I was wondering if there is a way to route WebSocket connections to a specific instance ...
+        
+
+            This is truly boggling my mind. I am using Python and trying to pull the secrets manager value from a resource that I have access to from what I can tell. I'm on Windows using Python 3.8.
+def ...
+        
+
+            I have a simple reactjs frontend and a small flask python backend. Both are currently running on two separate gcp servers.
+I could have simply use the public IP of the backend running server with the ...
+        
+
+            I have multiple big query schedule jobs which gets triggered using a cloud function. How do I set an alert and send am email when any of the big query schedule job fails.
+I did look at stackdriver ...
+        
+
+            I am using a Cloud Vision API in my current project, and it works pretty well, but the json file looks like that:
+Json file from pdf
+Cloud Vision saves all content of the pdf file and my question is:
+...
+        
+
+            I have a cloudbuild.yaml file for google cloud (GCP). I would like to grab the version from package.json using a simple bash script $(node -p -e "require('./package.json').version") (or any ...
+        
+
+            I have read a lot of articles recently, including the official documentation, trying to understand how the Global Window works in Apache Beam. I have read similar questions here in Stackoverflow but I ...
+        
+
+            I have a cloud function which is getting invoked by a GTM container through HTTP calls(I have provided the endpoint of my cloud function inside GTM). The number of invocations is high.
+This is my ...
+        
+
+            I tried to register an application in the Googlt Cloud Platform They ask me to enter a home site and a link to the privacy policy because I do not have my own site, I entered my telegram channel into ...
+        
+
+            I'm running into a new error when trying to provision a load balancer with a serverless network endpoint group pointing to a cloud function. It appears the resource name for the function doesn't pass ...
+        
+
+            I'm trying to connect to google cloud Cloud source repositories to Jet Brains upsource in windows.
+I'm facing an unknown host error.
+I followed the gcloud documentation below for ssh connection
+https:/...
+        
+
+            I'm using Postrgesql via python, but I'm getting an error on the following insertion, alleging that 'column "\ufeff61356169" does not exist'.
+c_id = "\ufeff61356169"
+chunk = "...
+        
+
+            I'm having trouble deploying a website I made using Flask and SQLAlchemy to Google App Engine. When run locally my web app can succesfully connect to my Cloud SQL, but when deployed tp App Engine, it ...
+        
+
+            I am trying to publish my Android app to our company's Play Store.
+On Google API access page
+
+I am trying to create new service account. It does not work.
+
+You are missing at least one of the ...
+        
+
+            Just wanted to make sure my understanding is correct. Based on my research, Deployment Manager can integrate with third party APIs, although is a BETA feature at this moment.
+So my question is, can ...
+        
+
+            My bigquery table data looks like shown below
+
+But I am trying to concatenate the array values to achieve an output like below.
+SATURDAY;12;23|WEDNESDAY;0;15 as a single column value
+Thanks in advance!...
+        
+
+            My yaml in my git repo looks like this:
+steps:
+  - name: "docker.io/library/python:3.6"
+    args: ["pip", "install", "-t", "/workspace/lib", "-r&...
+        
+
+            I am trying to import OVA with the following command:
+gcloud beta compute instances import instance --source-uri=gs://abc/xyz.ova --compute-service-account user@serviceaccount.iam.gserviceaccount.com -...
+        
+
+            I'm running a cloud run service with a working Cloud-SQL connection using the proxy to connect to the Cloud-SQL instance. The Cloud-SQL instance does not have a private IP configured.
+Now there is a ...
+        
+
+            So I'm writing an internal API with Google's cloud functions and we're going to allow only authenticated internal service accounts to access that function.
+We have some security issues and I was ...
+        
+
+            I have an issue with Pubsub. I have one function and one topic. When I publish on the topic, it takes 2 minutes before publishing the message. Is that normal?
+The problem is not present on local (with ...
+        
+
+            I have a GCP instance based on Windows Server 2012 R2. Windows was activated from the start but a week ago apears like not activated. How can i fix this issue? I don't have high level support that i ...
+        
+
+            I've tried many solutions mentioned here but I'm still unable to fix this. I'm receiving:
+"Google sign in failed. com.google.android.gms.common.api.ApiException: 10"
+I've verified my OAuth ...
+        
+
+            I am creating a Cloud Profiler profile from Java Agent in GCP. I have one spring boot application. When i start my application, output i get in the console that profile is created "abc". Now ...
+        
+
+            We have a service that can run with very fast latency but can't scale well and another service with low latency but can scale very well.
+We would like to have a load balancer that will be able to ...
+        
+
+            I'm almost having an headache while trying to allow access on GCP Cloud Run for different users, for a specific service using permission attributes.
+Let's consider I have different services running, ...
+        
+
+            I have an Azure SQL Server and I need some Google Cloud VMs to access that data. These VMs are Kubernetes nodes with autoscaling. I thought a solution could be to create a replica of my server in ...
+        
+
+            What is the business impact you are facing?
+Hi , We have  domains say mildev.com and it has it original 4 NS assigned while creation. I want to append a few more name servers to it (my secondary NS).
+...
+        
+
+            I am trying to give a GCS link in the Dashboard, so that the end users can download /view the source data file(csv). I tried with a link option in the text/text box as well as url embeded option. But ...
+        
+
+            I would like to change the partitions on my Google Cloud instance disk. One big 64GB ext4 partition should be split into 16GB ext4, 16GB swap and 32GB btrfs partitions.
+Until now, this has worked for ...
+        
+
+            I created a service account for a specific role by going through the steps mentioned here.
+https://cloud.google.com/iam/docs/creating-managing-service-accounts
+https://cloud.google.com/iam/docs/...
+        
+
+            When I add images it is stored inside google cloud platform VM correctly.
+But I am not able to fetch newly added images in my website.
+If I redeploy project with newly added images in assets folder it ...
+        
+
+            GCP dataproc - HDFS gets deleted automatically when you terminate the dataproc cluster. How to make it persistent HDFS even if you delete the dataproc cluster it should not delete the HDFS? Is it ...
+        
+
+            I have one enterprise application built using python flask. There are several individual modules are there which I converted then to whl files and referring them in other modules inside requirements....
+        
+
+            I need to read from an existing GCP Cloud SQL Postgres database.  I created a new user using a GCP console.  When I log in as that user I get "access denied" whenever I attempt to SELECT ...
+        
+
+            my model is a tensorflow.keras model which I imported to google ai platform predict.
+I'm not using docker.
+For prediction the model expects a variable x.
+model.predict(x)
+x is a numpy array of this ...
+        
+
+            I am following:
+https://codelabs.developers.google.com/codelabs/cloud-functions-python-http#2
+to deploy cloud function in GCP.
+After I execute gcloud functions deploy I get this error:
+Deploying ...
+        
+
+            I'm trying to add an SSL certificate to my GCP kubernetes cluster. My domain is already pointing to the cluster's external endpoint. I'm creating an ingress and the console gives me two options. I can ...
+        
+
+            To fix a vulnerability on Windows Server 2012 R2 (VM on Google Cloud Platform) I replaced ciphers in this registry (took reference from here) HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\...
+        
+
+            I have a use-case, where we need to create PCollection which contains fields which are of abstract data type. How to define schema and coder in such cases.
+This data is picked up from json files ...
+        
+
+            I have build my model (dump file), but I need to deploy it for some users (maybe 10 for the first time). This is a chatbot, but:
+
+Every message linking to the previous message (Hello how can I help ...
+        
+
+            ello I need someone to help me understand this problem
+We have a wordpress site, we have some plugins installed and one of those use cron jobs and we configured one in easycron.com, but there is where ...
+        
+
+            Similar to this Stack Overflow question asked for node.js, I am wondering if there is some way for the deployed Cloud Function in python to access its own version number. I cant find the answer to ...
+        
+
+            I've been trying GCP's Artifact Registry, which is currently in alpha for Python packages.
+I do the authentication via Keyring along with my service account, as explained in the documentation.
+I can ...
+        
+
+            I'm currently loading data from a csv file in Cloud Storage to BigQuery using a Cloud Function.
+Right now my logic is to delete the existing table(i.e. TableE) in Big Query and create new table with ...
+        
+
+            I want to make a setup: My Dockerized App -> Pub/Sub Dockerized emulator <- Cloud functions Dockerized emulator
+In steps:
+
+My app publishes a message to Pub/Sub Docker emulator
+Pub/Sub Docker ...
+        
+
+            I am creating a sink on google-cloud with the destination as the pub/sub topic, command used for it is as given below.
+gcloud logging sinks create geo_sinktest  
+pubsub.googleapis.com/projects//topics/...
+        
+
+            I want to upload a dockerfile to the Container Registry.
+In order to to that, fist i have to set up authentication. And in order to do that, i have to have set up the application keys.
+As far as the ...
+        
+
+            I am new to Ansible and I am trying to figure out how to create a GCP disk from a GCP snapshot, using the gcp_compute_disk module. I am using the following documentation: https://docs.ansible.com/...
+        
+
+            I have been trying to drop some of my views in my google cloud database
+I ran into this error:
+ERROR 1227 (42000) at line 74225: Access denied; you need (at least one of) the SYSTEM_USER privilege(s) ...
+        
+
+            I am trying to deploy a fairly simple Python web app with FastAPI and Gunicorn on Google Cloud Run with a Docker container following this tutorial and upon deploying I keep falling on the same error:
+...
+        
+
+            it's possible to get "all conversion value" from Google Ads (for every user in my manager account), with Apps Script usage?
+Something like get impressions (https://developers.google.com/...
+        
+
+            I am about to write a sort of thesis about Google Cloud Composer and I faced some uncertainties.
+In Google Cloud Composer the DAG is written in python. So does than mean I can only run python ...
+        
+
+            I met an issue when loading data from Oracle database to GCP BigQuery, and data are transferred by Avro format.
+There're lots of columns in Oracle table is number (38,10) data type, according to ...
+        
+
+            I have deployed Kubeflow Pipelines in GCP based on this docs. I would like to use Kubeflow Metadata Store for storing and accessing my models' metadata information.
+Metadata Store was part of the ...
+        
+
+            On my Django website the user is able to upload images. I am trying to implement a feature for them to search for images based on what the images are.
+To do this I decided to use Google Vision AI. I ...
+        
+
+            I have a WebServer to Compute Engine with many site.
+I site from today not responde.
+The tracert command does not complete the path.
+This is the result:
+tracert -d -w 2000 MyDomain.com
+Traccia ...
+        
+
+            In GKE, for cost-saving, I usually put the node number to zero. When I autoscale nodes(or say add) and run the pods. It takes more than 6-7 mins to connect to Loadbalancer and up the URL. That's why ...
+        
+
+            I was following this tutorial to make a sheet that publishes rows as messages to Pub/Sub topic.
+However, I got this error:
+{ 
+  error: {
+    code: 403,
+    message: 'User not authorized to perform ...
+        
+
+            I can't seem to connect to the CloudSQL using Docker container.
+Firstly here is my file paths: https://imgur.com/a/Nmx41o6
+Dockerfile.dev:
+
+FROM node:14-slim
+
+WORKDIR /usr/src/app
+COPY package*.json ....
+        
+
+            I am connecting to my project files through FileZilla (hosted in Google Cloud). It was working fine until yesterday. Starting yesterday I am getting issues:
+
+When I restart the compute engine ...
+        
+
+            This is my code get data from google sheet by sheet name.
+I'd like to know when I change my setScopes to down below and it will change API from V3 to V4.
+Can someone told me I still need change ...
+        
+
+            would you please advise :
+given a set of links on google Drive that have been shared, is there a way to automatically download all the files from the command line ?
+i have noted that a similar ...
+        
+
+            I'm trying to set-up a Cloud SQL Auth proxy with a Cloud SQL for MySQL instance.
+I'm following this guide but without success.
+so I'm creating a new VM instance. Once it has been created I'm running ...
+        
+
+            I created a function that extracts a specific attribute from a JSON file, but this file was together with the function in Cloud Functions. In this case, I was simply attaching the file and was able to ...
+        
